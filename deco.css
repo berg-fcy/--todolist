@@ -1,0 +1,193 @@
+body{
+    background: rgb(237, 253, 208);
+}
+
+.whole{
+    width: 800px;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    background: rgba(187, 183, 139, 0.336);
+    border-radius: 5px;
+    border: 2px solid rgba(112, 112, 112, 0.521);
+}
+.whole:hover{
+    box-shadow: 1px 1px 5px gray;
+}
+ul{
+    list-style: none;
+}
+
+.header{
+    width: 100%;
+    height: 60px;
+    background: rgb(98, 128, 133);
+}
+.title{
+    width: 600px;
+    height: 30px;
+    margin: auto;
+    word-spacing: 100px;
+    color: rgb(39, 38, 37);
+    font-size: 24px;
+}
+.header input{
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.todolist{
+    width: 100%;
+    height:100%;
+}
+.lists1{
+    width: 600px;
+    height: 100%;
+    padding: 20px 0 10px 0;
+    margin: auto;
+}
+.todo{
+    width: 600px;
+    height: 30px;
+}
+.todotitle{
+    width: 200px;
+    height: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    float: left;
+    line-height: 18px;
+}
+.todocount{
+    width: 18px;
+    height: 18px;
+    background: rgba(74, 194, 250, 0.425);
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 18px;
+    float: right;
+    margin-right: 10%;
+}
+.todoBox{
+    width: 600px;
+}
+.todoBox ul{
+    width: 600px;
+    margin: auto;
+}
+.todoBox li{
+    width: 580px;
+    height: 30px;
+    padding: 0 5px;
+    margin: 5px 0;
+    background: rgb(227, 245, 179);
+    line-height: 30px;
+    border-radius: 5px;
+    border-left: 3px solid black;
+}
+
+.donelist{
+    width: 100%;
+    height:100%;
+}
+.lists2{
+    width: 600px;
+    height: 100%;
+    padding: 20px 0 10px 0;
+    margin: auto;
+}
+.done{
+    width: 600px;
+    height: 30px;
+}
+.donetitle{
+    width: 200px;
+    height: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    float: left;
+    line-height: 18px;
+}
+.donecount{
+    width: 18px;
+    height: 18px;
+    background: rgba(74, 194, 250, 0.425);
+    border-radius: 50%;
+    font-size: 13px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 18px;
+    float: right;
+    margin-right: 10%;
+}
+.doneBox{
+    width: 600px;
+}
+.doneBox ul{
+    width: 600px;
+    margin: auto;
+}
+.doneBox li{
+    width: 580px;
+    height: 30px;
+    padding: 0 5px;
+    margin: 5px 0;
+    background: rgb(227, 245, 179);
+    line-height: 30px;
+    border-radius: 5px;
+    border-left: 3px solid black;
+}
+
+.footer{
+    width: 600px;
+    height: 30px;
+    margin:auto;
+    text-align: center;
+    line-height: 30px;
+}
+
+.content{
+    width: 500px;
+    height: 28px;
+    color: black;
+    font-size: 18px;
+    background: rgb(213, 252, 168);
+    line-height:28px;
+    border: none;
+}
+.content:hover{
+    border: 1px solid skyblue;
+}
+.listSpan{
+    width: 40px;
+    height: 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    float: right;
+    text-align: center;
+    line-height: 18px;
+    background: #c5ff68;
+    margin-top:4px;
+    
+}
+.listSpan:hover{
+    cursor:pointer;
+    color: rgba(255, 0, 0, 0.486);
+}
+.checkBox{
+    width: 18px;
+    height: 18px;
+    margin-top:6px;
+}
+
+
+

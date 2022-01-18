@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TodoList--待办事项</title>
+    <link rel="stylesheet" type="text/css" href="./deco.css">
+</head>
+<body>
+<div class="whole">
+    <div class="header">
+        <div class="title">TodoList
+            <form id="form" action="javascript:action()" method="post">
+                <input type="text" name="todoBox" id="Input" placeholder="输入待办事项" required="required" autocomplete="off">
+            </form>
+        </div>
+    </div>
+
+    <div class="todolist" id="todolist">
+        <div class="lists1">
+            <div class="todo" id="todo">
+                <span class="todotitle">待办事项</span>
+                <span class="todocount" id="todocount">0</span>
+            </div>
+            <div class="todoBox">
+                <ul id="todoBox">                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="donelist">
+        <div class="lists2">
+            <div class="done">
+                <span class="donetitle">已经完成</span>
+                <span class="donecount" id="donecount">0</span>
+            </div>
+            <div class="doneBox">
+                <ul id="doneBox">                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a style="color: gray;" href="javascript:clear()">全部清除</a>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="./func.js"></script>
+</html>
