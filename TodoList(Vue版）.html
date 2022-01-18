@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./dec(Vue).css">
+</head>
+
+<body>
+    <div id="app" v-cloak class="whole">
+        <header>
+            <section>
+                <label for="title">TodoList</label><br>
+                <input v-model="title" @keydown.enter="handleclick()" placeholder="添加待办事项" type="text" required="required" autocomplete="off" />
+            </section>
+        </header>
+        <section>
+            <h2>待办事项 <span id="todocount">{{todoCount.length}}</span></h2>
+            <ol id="todolist" class="demo-box">
+                <li v-for="(item,index) in todoCount">
+                    <input @click.prevent="setTodo(item)" type="checkbox">
+                    <input v-if="item===editItem" @blur="add" @keydown.enter="add" v-select v-model="item.title" type="text">
+                    <p v-else @dblclick="handelItem(item)">{{item.title}}</p>
+                    <a @click="remove(item)" href="#">删除</a><br>
+                </li>
+                 <h5>双击修改内容</h5>
+            </ol>
+            <h2>已经完成 <span id="donecount">{{doneCount.length}}</span></h2>
+            <ul id="donelist">
+                <li v-for="(item,index) in doneCount">
+                    <input @click.prevent="setDone(item)" checked="checked" type="checkbox">
+                    <p>{{item.title}}</p>
+                    <a @click="remove(item)" href="#">删除</a>
+                </li>
+
+            </ul>
+        </section>
+        <footer>
+            <a href="javascript:clear();">全部清除（点击后刷新清除）</a>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <script src="./Vue.js" type="text/javascript"></script>
+</body>
+
+</html>
